@@ -1,0 +1,21 @@
+.screen-reader-shortcut,
+.screen-reader-text,
+.screen-reader-text span {
+
+	@include hide-visually;
+
+	&:active,
+	&:focus {
+
+		@include hide-visually(unhide);
+
+		position: absolute;
+		color: $color--white;
+		text-decoration: none;
+		background-color: $color--muted;
+	}
+}
+
+.more-link {
+	position: relative;
+}

@@ -1,0 +1,12 @@
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 32px;
+
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+.menu-toggle {
+
+	@include hover-focus {
+		background: transparent;
+	}
+}

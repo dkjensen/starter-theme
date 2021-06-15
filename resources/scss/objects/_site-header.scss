@@ -1,0 +1,8 @@
+.site-header {
+
+	@include margin( var(--width--gutter) null);
+
+	.wrap {
+		align-items: center;
+	}
+}

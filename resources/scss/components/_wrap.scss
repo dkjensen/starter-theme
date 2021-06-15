@@ -1,0 +1,14 @@
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	max-width: var(--width--layout);
+
+	@include padding(null calc(var(--width--gutter) / 2));
+	@include margin(null auto);
+
+	.wrap {
+		max-width: 100%;
+	}
+}

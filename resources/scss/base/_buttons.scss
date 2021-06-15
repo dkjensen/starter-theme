@@ -1,0 +1,30 @@
+#{$all-buttons} {
+	display: inline-block;
+	padding: var(--spacing--small) var(--spacing);
+	font-family: var(--font-family-base);
+	font-weight: 600;
+	line-height: 1;
+	color: $action-color--contrast;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	background-color: $action-color;
+	border: 0;
+	border-radius: var(--border-radius);
+	transition: background-color var(--duration) var(--timing);
+	appearance: none;
+	-webkit-font-smoothing: antialiased;
+
+	&:hover {
+		background-color: $action-color--alt;
+	}
+
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+}

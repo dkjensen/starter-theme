@@ -1,0 +1,15 @@
+html {
+	box-sizing: border-box;
+	background-color: $viewport-background-color;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}

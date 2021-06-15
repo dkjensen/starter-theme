@@ -1,0 +1,59 @@
+// Colors
+$color--blue: #1565c0;
+$color--blue-light: #3b83d5;
+$color--gray: #333;
+$color--white: #fff;
+$color--muted: #bababa;
+
+// Font Colors
+$font-color--base: $color--gray;
+$action-color: $color--blue;
+$action-color--alt: $color--blue-light;
+$action-color--contrast: $color--white;
+
+// Background Colors
+$viewport-background-color: $color--white;
+
+:root {
+	// Typography
+	--font-family: #{$font-stack-system};
+	--font-family--heading: var(--font-family);
+
+	--font-weight--thin: 100;
+	--font-weight--extra-light: 200;
+	--font-weight--light: 300;
+	--font-weight--normal: 400;
+	--font-weight--medium: 500;
+	--font-weight--semi-bold: 600;
+	--font-weight--bold: 700;
+	--font-weight--extra-bold: 800;
+	--font-weight--black: 900;
+
+	--font-size--body: 1.6rem;
+
+	// Line heights
+	--line-height: 1.5;
+	--line-height--heading: 1.2;
+
+	// Other Sizes
+	--border-radius: 0.1875rem;
+	--spacing: 1.5rem;
+	--spacing--small: 0.75rem;
+
+	// Borders
+	--border-width: 0.0625rem;
+	--border: var(--border-width) solid currentColor;
+
+	// Focus
+	--focus-outline-width: 1px;
+	--focus-outline-offset: 0.125rem;
+	--focus-outline: var(--focus-outline-width) dotted #{$color--muted};
+
+	// Animations
+	--duration: 150ms;
+	--timing: ease;
+
+	// Layout
+	--width--layout: 1200px;
+	--width--gutter: 30px;
+}

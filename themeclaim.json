@@ -1,0 +1,10 @@
+{
+  "from": {
+    "Name": "Starter Theme",
+    "Description": "Default theme",
+    "Namespace": "Dkjensen\\StarterTheme",
+    "Uri": "https://dkjensen.com/",
+    "Author": "David Jensen",
+    "AuthorUri": "https://dkjensen.com/"
+  }
+}

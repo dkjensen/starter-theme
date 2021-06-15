@@ -1,0 +1,49 @@
+html {
+	font-family: var(--font-family);
+	font-size: 62.5%;
+	line-height: var(--line-height);
+	color: $font-color--base;
+}
+
+body {
+	font-size: var(--font-size--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 var(--spacing--small);
+	font-family: var(--font-family--heading);
+	font-size: 1.25rem;
+	line-height: var(--line-height--heading);
+}
+
+p {
+	margin: 0 0 var(--spacing--small);
+}
+
+a {
+	color: $action-color;
+	text-decoration-skip-ink: auto;
+	transition: color var(--duration) var(--timing);
+
+	&:hover {
+		color: $action-color--alt;
+	}
+
+	&:focus {
+		outline: var(--focus-outline);
+		outline-offset: var(--focus-outline-offset);
+	}
+}
+
+hr {
+	margin: var(--spacing) 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: var(--border);
+	border-left: 0;
+}

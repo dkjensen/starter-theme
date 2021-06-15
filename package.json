@@ -1,0 +1,78 @@
+{
+  "name": "starter-theme",
+  "version": "0.0.0-development",
+  "description": "Default theme",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env sync=1 NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "npm run lint:styles && npm run lint:scripts && npm run lint:php",
+    "lint:styles": "cross-env stylelint './resources/scss/**/*.scss' --syntax scss",
+    "lint:scripts": "cross-env eslint './resources/js/*.js'",
+    "lint:php": "cross-env ./vendor/bin/phpcs --extensions=php . --runtime-set testVersion 7.0- -s",
+    "i18n": "npm run i18n:textdomain && npm run i18n:pot",
+    "i18n:textdomain": "npx wpi18n addtextdomain --exclude=vendor,tests,node_modules",
+    "i18n:pot": "npx wpi18n makepot --domain-path=assets/lang",
+    "package": "./bin/build-zip.sh",
+    "prepare": "husky install",
+    "rename": "theme-claim"
+  },
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "author": "David Jensen",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.5",
+    "@babel/eslint-parser": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.12.10",
+    "bourbon": "^7.0.0",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "cssnano": "^4.1.11",
+    "eslint": "^7.28.0",
+    "eslint-config-wordpress": "^2.0.0",
+    "hamburgers": "^1.1.3",
+    "husky": "^6.0.0",
+    "laravel-mix": "^6.0.19",
+    "laravel-mix-polyfill": "^3.0.1",
+    "laravel-mix-svg-sprite": "^1.0.2",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-wp-i18n": "^1.2.5",
+    "normalize.css": "^8.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.13.4",
+    "prettier-stylelint": "^0.4.2",
+    "rtlcss": "^2.5.0",
+    "sass": "^1.34.1",
+    "sass-loader": "^11.0.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-wordpress": "^17.0.0",
+    "theme-claim": "^0.2.0"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "theme": {
+    "name": "Starter Theme",
+    "authoruri": "https://dkjensen.com/",
+    "licenseuri": "http://www.gnu.org/licenses/gpl-3.0.html",
+    "domainpath": "/assets/lang",
+    "textdomain": "starter-theme"
+  }
+}
