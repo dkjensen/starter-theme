@@ -52,6 +52,7 @@
     "rtlcss": "^2.5.0",
     "sass": "^1.34.1",
     "sass-loader": "^11.0.1",
+    "semantic-release-plugin-update-version-in-files": "^1.1.0",
     "stylelint": "^13.8.0",
     "stylelint-config-recess-order": "^2.3.0",
     "stylelint-config-recommended": "^3.0.0",
