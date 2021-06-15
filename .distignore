@@ -23,6 +23,7 @@
 .eslintrc.json
 .gitattributes
 .gitignore
+.lintstagedrc
 .prettierignore
 .releaserc.js
 .stylelintignore
