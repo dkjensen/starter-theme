@@ -5,6 +5,7 @@
     "Namespace": "Dkjensen\\StarterTheme",
     "Uri": "https://dkjensen.com/",
     "Author": "David Jensen",
-    "AuthorUri": "https://dkjensen.com/"
+    "AuthorUri": "https://dkjensen.com/",
+    "AuthorEmail": "david@dkjensen.com"
   }
 }
